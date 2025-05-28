@@ -3,10 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web lib template</title>
+    <title>@am2r/img</title>
   </head>
   <body>
-    <div id="app"></div>
+
+    <h1>@am2r/img Demo</h1>
+
+    <div>
+      <input type="file" id="file-input" accept="image/*" />
+    </div>
+    <div>
+      <label for="size-input">Size:</label>
+      <input id="size-input" type="number" placeholder="Size" />
+    </div>
+
+    <div>
+      <button id="resize-btn">Resize</button>
+    </div>
+
+    <img id="output-image" alt="Resized Image" />
+
     <script type="module" src="./_c/main.js"></script>
   </body>
 </html>
